@@ -28,7 +28,7 @@
 					<div class="no-move"></div>
 				</div>
 				<div class="box-content">
-					<form role="form" action="startleave" method="post">
+					<form role="form" action="startLeave" method="post">
 						<div class="form-group">
 							<label>请假类型</label> 
 							<select name="leave_type" class="form-control">
@@ -64,7 +64,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#btn").click(function(){
-		$.post("startleave",$("form").serialize(),function(){
+		$.post("startLeave",$("form").serialize(),function(){
 			alert("申请成功");
 			LoadAjaxContent("leaveapply");
 		});

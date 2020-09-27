@@ -181,9 +181,9 @@ public class ActivitiController {
         return "activiti/modifyapply";
     }
 
-    @RequestMapping(value = "/startleave", method = RequestMethod.POST)
+    @RequestMapping(value = "/startLeave", method = RequestMethod.POST)
     @ResponseBody
-    public MSG start_leave(LeaveApply apply, HttpSession session) {
+    public MSG startLeave(LeaveApply apply, HttpSession session) {
         String userid = (String) session.getAttribute("username");
         Map<String, Object> variables = new HashMap<String, Object>();
         variables.put("applyuserid", userid);
