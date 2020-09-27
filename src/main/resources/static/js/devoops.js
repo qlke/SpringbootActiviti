@@ -3492,8 +3492,8 @@ $(document).ready(function () {
 	$('#about').on('mouseleave', function(){
 		$('#about').removeClass('about-h');
 	})
-	$.get("currentuser",function(data){
-		   $("#currentuser").text(data.state);
+	$.get("currentUser",function(data){
+		   $("#currentUser").text(data.state);
 		});
 });
 
